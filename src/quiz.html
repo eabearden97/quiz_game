@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -29,16 +30,16 @@
             <p>
                 What two numbers were yelled out in Monsters Inc. when the sock was found on Sully's back?  
             </p>
-            <input type="radio" id="1a" name="answer" value="wrong">
+            <input type="radio" id="1a" name="answer1" value="wrong">
             <label for="1a">43 & 34</label>
             <br>
-            <input type="radio" id="1b" name="answer" value="wrong">
+            <input type="radio" id="1b" name="answer1" value="wrong">
             <label for="1b">24 & 20</label>
             <br>
-            <input type="radio" id="1c" name="answer" value="correct">
+            <input type="radio" id="1c" name="answer1" value="correct">
             <label for="1c">23 & 19</label>
             <br>
-            <input type="radio" id="1d" name="answer" value="wrong">
+            <input type="radio" id="1d" name="answer1" value="wrong">
             <label for="1d">33 & 17</label>
             <br>
         </div>
@@ -47,16 +48,16 @@
             <p>
                 What is the best pet?  
             </p>
-            <input type="radio" id="2a" name="answer" value="wrong">
+            <input type="radio" id="2a" name="answer2" value="wrong">
             <label for="2a">Alligator</label>
             <br>
-            <input type="radio" id="2b" name="answer" value="wrong">
+            <input type="radio" id="2b" name="answer2" value="wrong">
             <label for="2b">Bird</label>
             <br>
-            <input type="radio" id="2c" name="answer" value="wrong">
+            <input type="radio" id="2c" name="answer2" value="wrong">
             <label for="2c">Cockatoo</label>
             <br>
-            <input type="radio" id="2d" name="answer" value="correct">
+            <input type="radio" id="2d" name="answer2" value="correct">
             <label for="2d">Dog</label>
             <br>
         </div>
@@ -65,16 +66,16 @@
             <p>
                 What's my birthday?  
             </p>
-            <input type="radio" id="3a" name="answer" value="correct">
+            <input type="radio" id="3a" name="answer3" value="correct">
             <label for="3a">Jan. 13th 1995</label>
             <br>
-            <input type="radio" id="3b" name="answer" value="wrong">
+            <input type="radio" id="3b" name="answer3" value="wrong">
             <label for="3b">Feb. 30th 1997</label>
             <br>
-            <input type="radio" id="3c" name="answer" value="wrong">
+            <input type="radio" id="3c" name="answer3" value="wrong">
             <label for="3c">July 4th 1776</label>
             <br>
-            <input type="radio" id="3d" name="answer" value="wrong">
+            <input type="radio" id="3d" name="answer3" value="wrong">
             <label for="3d">Dec. 25th 0001</label>
             <br>
         </div>
@@ -83,25 +84,28 @@
             <p>
                 Is 25 = 25?  
             </p>
-            <input type="radio" id="4a" name="answer" value="correct">
+            <input type="radio" id="4a" name="answer4" value="correct">
             <label for="4a">Yes</label>
             <br>
-            <input type="radio" id="4b" name="answer" value="wrong">
+            <input type="radio" id="4b" name="answer4" value="wrong">
             <label for="4b">No</label>
             <br>
-            <input type="radio" id="4c" name="answer" value="wrong">
+            <input type="radio" id="4c" name="answer4" value="wrong">
             <label for="4c">Why?</label>
             <br>
-            <input type="radio" id="4d" name="answer" value="wrong">
+            <input type="radio" id="4d" name="answer4" value="wrong">
             <label for="4d">"...."</label>
             <br>
         </div>
         <div>
-            <button>Submit</button>
+            <button id="submit" class="submit" onclick="handleSubmit();" type="button">Submit</button>
         </div>
+<!--        <div class="alert" role="alert">-->
+<!--            -->
+<!--        </div>-->
     </div>
     
-
+    <script src="src/javascript/game.js"></script>
 </body>
 
 

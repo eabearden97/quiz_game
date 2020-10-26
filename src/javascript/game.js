@@ -1,23 +1,19 @@
-function readInt(message, min, max) {
-
-    let valid = false;
-    let result;
-
-    do {
-        let input = console.prompt(message);
-        result = parseInt(input, 10);
-        if (isNaN(result)) {
-            console.log(`'${input}' is not a number.`);
-        } else if (result < min || result > max) {
-            console.log(`Value must be between ${min} and ${max}.`);
-        } else {
-            valid = true;
+function handleSubmit() {
+console.log("You've reached the function");
+    let amountCorrect = 0;
+    for(let i=0; i<3;i++) {
+        var radios = document.getElementsByName('answer'+i);
+        for(j=0;j<radios.length;j++) {
+            var radio = radios[j];
+            if(radio.value == "correct" && radio.checked) {
+                amountCorrect++;
+            }
         }
-    } while (!valid);
-
-    return result;
+    }
+    alert("Correct Responses: " + amountCorrect);
 }
 
-Question {
-    
-}
+document.getElementById("submit").onclick=handleSubmit;
+//
+//const submitButton = document.getElementById("submit")
+//submitButton.addEventListener('click', showResults);
